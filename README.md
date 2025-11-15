@@ -21,8 +21,14 @@ install TFT_eSPI (by bodmer) in library manager
 install XPT2046_Touchscreen (by Paul Stoffregen) in library manager
 
 # step 2
-open your file explorer and go to 
-/this pc/local disk/Users/yourname/Documents/Arduino/libraries/TFT_eSPI
+<br> open your file explorer and go to 
+WINDOWS:
+<br> /this pc/local disk/Users/yourname/Documents/Arduino/libraries/TFT_eSPI
+
+<br> ubuntu
+<br>/home/snap/arduino/85/Arduino/libraties/TFT_eSPI
+<br>
+<br> cant find? simply open a file explorer window and search "TFT_eSPI"
 
 Then open the User_setup.h file and paste the user setup from this repo, after, open user_setup_select.h and replace it with the one from this repo
 
