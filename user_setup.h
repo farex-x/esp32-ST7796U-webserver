@@ -14,7 +14,7 @@
 #define TFT_WIDTH  320
 #define TFT_HEIGHT 480
 
-//PORTRAIT (use if devicee is in portrait)
+//PORTRAIT (use if device is in portrait)
 //#define TFT_WIDTH  480
 //#define TFT_HEIGHT 320
 
