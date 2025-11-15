@@ -42,7 +42,7 @@ the esp will scan for saved networks, edit this with your network info
 <br>  };
 
 
-then it will host a web page on 192.168.1.*ip* (index) and /info
+then it will host a web page on 192.168.1.*ip* (index) and /info, you can add as many as you want (limit is esp storage)
 ```html
   server.on("/", HTTP_GET, []() { //on / mean main when you access its ip
     String html = "<!DOCTYPE html><html><head>";
@@ -69,9 +69,9 @@ server.on("/info", HTTP_GET, []() {
     html += "<h1>Event Info</h1>";
     html += "<p><strong>SSID:</strong> " + currentSSID + "</p>";
     html += "<p><strong>IP:</strong> " + currentIP + "</p>";
-    html += "<p><strong>RSSI reseau:</strong> " + String(WiFi.RSSI()) + " dBm</p>";
+    html += "<p><strong>RSSI:</strong> " + String(WiFi.RSSI()) + " dBm</p>";
     html += "<p><strong>UP:</strong> " + String(uptime) + " sec</p>";
-    html += "<p><a href='/'>retour a l'acceuil</a></p>";
+    html += "<p><a href='/'>return</a></p>";
     html += "</body></html>";
     server.send(200, "text/html", html);
   });
