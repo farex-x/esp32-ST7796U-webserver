@@ -1,0 +1,10 @@
+  server.onNotFound([]() {  //displays an image of a cat for 404 (not found)
+    String html = "<!DOCTYPE html><html><head>";
+    html += "<meta name='viewport' content='width=device-width, initial-scale=1'>";
+    html += "<style>body{background:black;color:white;text-align:center;padding:50px;} img{max-width:80%;height:auto;}</style>";
+    html += "</head><body>";
+    html += "<title>404 - the requested data is not found</title>"; //title of the page
+    html += "<img src='https://http.cat/404.jpg' alt='Not Found'>"; //image URL
+    html += "</body></html>";
+    server.send(404, "text/html", html);
+});
